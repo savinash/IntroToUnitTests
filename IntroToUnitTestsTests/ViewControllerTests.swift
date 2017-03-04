@@ -36,7 +36,7 @@ class ViewControllerTests: XCTestCase {
         
         let viewController = ViewController()
         
-        let odd = 9
+        let odd = 8
         
         
         
