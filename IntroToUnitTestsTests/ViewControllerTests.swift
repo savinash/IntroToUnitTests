@@ -1,6 +1,6 @@
 //
-//  IntroToUnitTestsTests.swift
-//  IntroToUnitTestsTests
+//  ViewControllerTests.swift
+//  IntroToUnitTests
 //
 //  Created by Avinash Kumar on 04/03/17.
 //  Copyright © 2017 NewSwift. All rights reserved.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import IntroToUnitTests
 
-class IntroToUnitTestsTests: XCTestCase {
+class ViewControllerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,16 +21,14 @@ class IntroToUnitTestsTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testisNumberEven(){
+        
+        let viewController = ViewController()
+        
+        let odd = 8
+        
+        
+        
+        XCTAssertTrue(viewController.isNumberEven(num: odd))
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

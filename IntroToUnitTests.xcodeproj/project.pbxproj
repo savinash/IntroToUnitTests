@@ -12,7 +12,7 @@
 		E1068A3C1E69F48F00D59FE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1068A3A1E69F48F00D59FE8 /* Main.storyboard */; };
 		E1068A3E1E69F48F00D59FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1068A3D1E69F48F00D59FE8 /* Assets.xcassets */; };
 		E1068A411E69F48F00D59FE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1068A3F1E69F48F00D59FE8 /* LaunchScreen.storyboard */; };
-		E1068A4C1E69F49100D59FE8 /* IntroToUnitTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1068A4B1E69F49100D59FE8 /* IntroToUnitTestsTests.swift */; };
+		E1068A571E69F54200D59FE8 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1068A561E69F54200D59FE8 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +34,8 @@
 		E1068A401E69F48F00D59FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1068A421E69F48F00D59FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1068A471E69F49000D59FE8 /* IntroToUnitTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntroToUnitTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1068A4B1E69F49100D59FE8 /* IntroToUnitTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroToUnitTestsTests.swift; sourceTree = "<group>"; };
 		E1068A4D1E69F49100D59FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1068A561E69F54200D59FE8 /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +90,8 @@
 		E1068A4A1E69F49000D59FE8 /* IntroToUnitTestsTests */ = {
 			isa = PBXGroup;
 			children = (
-				E1068A4B1E69F49100D59FE8 /* IntroToUnitTestsTests.swift */,
 				E1068A4D1E69F49100D59FE8 /* Info.plist */,
+				E1068A561E69F54200D59FE8 /* ViewControllerTests.swift */,
 			);
 			path = IntroToUnitTestsTests;
 			sourceTree = "<group>";
@@ -150,6 +150,7 @@
 					};
 					E1068A461E69F49000D59FE8 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E1068A321E69F48D00D59FE8;
 					};
@@ -208,7 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1068A4C1E69F49100D59FE8 /* IntroToUnitTestsTests.swift in Sources */,
+				E1068A571E69F54200D59FE8 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,10 +365,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = IntroToUnitTestsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.newswift.IntroToUnitTestsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntroToUnitTests.app/IntroToUnitTests";
 			};
@@ -378,6 +381,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = IntroToUnitTestsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.newswift.IntroToUnitTestsTests;
