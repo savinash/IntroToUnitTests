@@ -28,6 +28,15 @@ class ViewController: UIViewController {
         }
     }
     
+    func isNumberOdd(num: Int) -> Bool{
+        if num%2 == 0 {
+            return true
+        }else{
+            return false
+        }
+    }
+
+    
 
 }
 

@@ -31,4 +31,15 @@ class ViewControllerTests: XCTestCase {
         
         XCTAssertTrue(viewController.isNumberEven(num: odd))
     }
+    
+    func testisNumberOdd(){
+        
+        let viewController = ViewController()
+        
+        let odd = 8
+        
+        
+        
+        XCTAssertTrue(viewController.isNumberEven(num: odd))
+    }
 }
